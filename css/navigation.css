@@ -1,6 +1,8 @@
 @import "variables.css";
 
 header {
+  width: 100vw;
+
   /* Colors */
   background-color: var(--color-main2);
   color: var(--color-main1);
@@ -9,7 +11,7 @@ header {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 
   /* Follow */
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 50;

@@ -9,7 +9,7 @@
 
   & .hero-image-container {
     height: min(60vh, 25rem);
-    width: min(100%, 30rem);
+    width: min(100vw, 30rem);
     margin: min(-6rem, -10vh) 0 0 0;
     border-radius: 0 0 50% 50%;
     box-shadow: 0 -0.8rem 0.8rem 0.8rem rgba(0, 0, 0, 0.3) inset;
@@ -28,7 +28,6 @@
   }
 
   & .hero-text-container {
-    width: min(90%, 40rem);
     margin-block: 5rem 0;
 
     display: flex;
@@ -45,7 +44,6 @@
 
 @media (min-width: 65rem) {
   .hero {
-    margin-block: 10rem 0;
     width: min(100% - 3rem, 70rem);
     flex-direction: row-reverse;
 
