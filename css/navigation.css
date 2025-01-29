@@ -1,0 +1,42 @@
+@import "variables.css";
+
+header {
+  /* Size */
+  height: 5rem;
+  padding: 0 1rem;
+
+  /* Colors */
+  background-color: var(--color-main2);
+  color: var(--color-main1);
+
+  /* Shadow */
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+
+  /* Follow */
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  /* Flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  & .logo {
+    /* Fonts */
+    font-size: 1.25rem;
+    font-family: var(--font-primary), serif;
+    font-weight: bold;
+  }
+
+  & nav {
+    width: 20svw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-size: 1.15rem;
+  }
+}

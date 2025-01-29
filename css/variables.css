@@ -1,0 +1,15 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900");
+
+/* Variables */
+:root {
+  --font-primary: "Jost";
+  --font-secondary: "Bodoni Moda";
+
+  --color-main1: black;
+  --color-main2: white;
+
+  --color-accent1: red;
+  --color-accent2: blue;
+}
