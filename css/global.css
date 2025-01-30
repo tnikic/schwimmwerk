@@ -1,5 +1,9 @@
 @import "variables.css";
 
+* {
+  /*outline: red solid 1px;*/
+}
+
 /* Fonts */
 body {
   line-height: 1.5;
@@ -13,8 +17,8 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2rem, 3vw, 3rem);
-  font-family: var(--font-secondary), sans-serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  font-family: var(--font-primary), sans-serif;
   font-weight: bold;
 }
 
@@ -25,7 +29,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(1.3rem, 2vw, 1.4rem);
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   font-family: var(--font-primary), sans-serif;
   font-weight: normal;
 
@@ -40,7 +44,7 @@ main {
 }
 
 section {
-  width: min(90%, 70rem);
+  width: min(90%, 85rem);
   margin-block: 2rem;
 }
 

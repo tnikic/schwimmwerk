@@ -44,11 +44,10 @@
 
 @media (min-width: 65rem) {
   .hero {
-    width: min(100% - 3rem, 70rem);
     flex-direction: row-reverse;
 
     & .hero-image-container {
-      width: 30%;
+      width: 20rem;
       border-radius: 50% 50% 0 0;
       margin: 0;
       box-shadow: 0 0 0.8rem 0.8rem rgba(0, 0, 0, 0.4) inset;
