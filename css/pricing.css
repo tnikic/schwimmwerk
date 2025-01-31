@@ -1,0 +1,74 @@
+.pricing {
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & .pricing-title {
+    margin-block: 3rem;
+  }
+
+  & .pricing-toggle {
+    width: min(8rem, 35%);
+    margin-block: 0 3rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-size: clamp(1rem, 1.5vw, 1.5rem);
+      font-family: var(--font-primary), sans-serif;
+      font-weight: normal;
+    }
+  }
+
+  & .pricing-grid {
+    display: grid;
+    gap: 1.8rem;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+
+    & .pricing-card {
+      padding: 1rem;
+
+      border-radius: 1rem;
+      box-shadow:
+        0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.1),
+        -0.1rem -0.1rem 0.3rem rgba(0, 0, 0, 0.1);
+
+      & .pricing-value {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        & .price {
+          font-size: clamp(3rem, 4vw, 4rem);
+          font-family: var(--font-primary), sans-serif;
+          font-weight: bold;
+        }
+        & .price-notations {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-evenly;
+
+          & .price-unit {
+            font-size: clamp(1rem, 1.5vw, 1.5rem);
+            font-family: var(--font-secondary), serif;
+            font-weight: lighter;
+          }
+        }
+      }
+
+      & .price-disclaimer {
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        font-family: var(--font-secondary), serif;
+        font-weight: lighter;
+      }
+    }
+  }
+}
