@@ -50,6 +50,9 @@
           font-family: var(--font-primary), sans-serif;
           font-weight: bold;
         }
+        & .price-block {
+          display: none;
+        }
         & .price-notations {
           display: flex;
           flex-direction: column;
@@ -69,6 +72,14 @@
         font-family: var(--font-secondary), serif;
         font-weight: lighter;
       }
+    }
+  }
+}
+
+@media (min-width: 65rem) {
+  .pricing {
+    & .pricing-grid {
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 }
